@@ -1,7 +1,6 @@
 .intro.about {
     max-width: 50em;
     margin-bottom: 2em;
-    text-align: left;
 }
 .section-container {
     text-align: left;
@@ -50,6 +49,8 @@ section:nth-last-of-type(2) {
     padding: 5px 10px;
     margin: 5px 10px;
 }
+
+/* ---------------- MEDIA QUERIES -----------------*/
 
 @media (max-width: 480px) {
     .section-container {
