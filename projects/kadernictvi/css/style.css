@@ -1,0 +1,44 @@
+/* BOX MODEL */
+html { box-sizing: border-box; }
+*, *:after, *:before { box-sizing: inherit; }
+
+/*
+Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
+xs: (max-width: 575px)
+sm: (min-width: 576px) and (max-width: 767px)
+md: (min-width: 768px) and (max-width: 991px)
+lg: (min-width: 992px) and (max-width: 1199px)
+xl: (min-width: 1200px)*/
+
+
+h2 {
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 48px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    font-style: italic;
+    color: #c5308a;
+}
+.sekce {
+    padding-top: 45px;
+}
+.sekce-seda {
+    background-color: #f0f0f0;
+}
+.sekce-ruzova {
+    background-color: #c5308a;
+}
+.foto {
+    filter: grayscale(1);
+    transition: all 1s;
+}
+.foto:hover {
+    filter: grayscale(0);
+    transform: scale(0.9);
+}

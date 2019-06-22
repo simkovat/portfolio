@@ -1,0 +1,83 @@
+.intro.about {
+    max-width: 50em;
+    margin-bottom: 2em;
+    text-align: left;
+}
+.section-container {
+    text-align: left;
+    display: flex;
+}
+.column-left {
+    width: 30%;
+}
+.column-right {
+    margin-left: 3em;
+    width: 70%
+}
+h2 {
+    margin-top: 0;
+    margin-left: 1em;
+}
+span {
+    font-size: 0.9em;
+    font-weight: 300;
+}
+section {
+    border-bottom: dashed lightblue 2px;
+    padding-bottom: 2em;
+}
+section p {
+    margin: 2em 1em 2em 0;
+}
+section:nth-last-of-type(2) {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.gallery-container {
+    display: flex;
+}
+.gallery-container img {
+    width: 25%;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill {
+    background: #37055A;
+    color: white;
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+@media (max-width: 480px) {
+    .section-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .column-left {
+        width: 100%;
+    }
+    .column-right {
+        width: 100%;
+        margin: 0 0.5em
+    }
+    h2 {
+        text-align: center;
+    }
+    .gallery-container {
+        flex-wrap: wrap;
+    }
+    .gallery-container img {
+        width: 50%;
+    }
+}
+@media (min-width: 480px) and (max-width: 860px) {
+    .gallery-container {
+        flex-wrap: wrap;
+    }
+    .gallery-container img {
+        width: 50%;
+    }
+}

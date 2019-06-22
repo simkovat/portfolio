@@ -1,0 +1,228 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ 
+ Palette URL: http://paletton.com/#uid=1210u0kw0w0jyC+oRxVy4oIDfjr
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.obal {
+    width: 960px;
+    /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto;
+    /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+
+
+.header {
+    display: flex;
+    align-items: center;
+    position: sticky; top: 0; bottom: 50;
+    background-color: #e5e5e5;
+}
+
+
+.header-logo {
+    margin: 0 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-menu {
+    display: flex;
+}
+
+.header-menu a {
+    color: #879700;
+    text-decoration: none;
+    padding: 15px 30px;
+    transition: background-color 250ms, color 250ms;
+}
+
+.header-menu a:hover {
+    background-color: #D1B623;
+    color: #879700;
+}
+
+.jumbotron {
+    position: relative;
+    background: #DFFA00 url('images/background1.jpg') no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 60px 425px 60px 40px;
+}
+
+.jumbotron-title {
+    font-size: 90px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.jumbotron-desc {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 300;
+    margin: 50px 0;
+}
+
+.jumbotron-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.jumbotron-actions {
+    font-size: 20px;
+    display: flex;
+}
+
+.jumbotron-actions a {
+    border-radius: 8px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 20px 30px;
+    text-decoration: none;
+    margin-right: 23px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    line-height: 1;
+    transition: background-color 250ms;
+}
+
+.jumbotron-actions-main {
+    background-color: #48418e;
+}
+
+.jumbotron-actions a:hover {
+    background-color: #25133d;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.additionalContent {
+    display: flex;
+}
+
+.additionalContent-column {
+    flex: 1 1 calc(100% / 3);
+    
+}
+
+.product {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.product-title {
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #879700;
+}
+
+.product-content {
+    text-align: center;
+    margin: 0;
+}
+
+.between-image1 {
+    background-image: url('images/stavypult2.jpg');
+    background-size: cover;
+    height: 50vw;
+}
+
+/* -------SEKCE VYROBA --------*/
+.production-flex {
+    display: flex;
+    justify-content: space-around;
+}
+.production-flex img {
+    height: auto; 
+    width: auto; 
+    max-width: 500px; 
+    max-height: 500px;
+    margin: 0 75px;
+}
+.production-flex div {
+    max-width: 750px;
+    margin: 0 75px;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.between-image2 {
+    background-image: url('images/stavanastole.jpg');
+    background-size: cover;
+    height: 50vw;
+    margin-top: 100px;
+}
+
+/* -----------KONTAKT-------------*/
+#contact {
+    text-align: center;
+}
+.contact-box {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+a img {
+    max-width: 100px;
+    margin-bottom: 50px;
+}
+
+/* ----------FOOTER------------*/
+.footer {
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #A8B226;
+    color: #fff;
+    text-align: center;
+}
