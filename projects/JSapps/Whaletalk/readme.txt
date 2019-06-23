@@ -1,0 +1,1 @@
+excercise to practice loops, the input sentence gets "translated" into whale talk :-)

@@ -1,4 +1,4 @@
-/* excersice for creating arays and objects and manipulating the data in them or displaying the data */
+/* excersice for creating arrays and objects and manipulating the data in them or displaying the data */
 
 let team = {
     _players: [

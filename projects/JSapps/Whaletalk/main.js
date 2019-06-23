@@ -1,4 +1,4 @@
-/* excercise to practice loops, theinput sentence gets "translated" into whale talk :-) */
+/* excercise to practice loops, the input sentence gets "translated" into whale talk :-) */
 
 /*write the sentence to be translated here*/
 const input = 'ahoj ja jsem velryba';

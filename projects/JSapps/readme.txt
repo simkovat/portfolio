@@ -1,0 +1,1 @@
+These small apps were made during codecademy web development path as excercies for various Javascript (ES6) topics. 
