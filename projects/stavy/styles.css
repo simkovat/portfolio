@@ -1,4 +1,4 @@
-/* nejsme vcerejsi, pouzivame moderni box model */
+
 html {
     box-sizing: border-box;
 }
@@ -8,17 +8,6 @@ html {
 ::before {
     box-sizing: inherit;
 }
-
-/*
- BARVY
- sede pozadi      #e5e5e5
- 
- Palette URL: http://paletton.com/#uid=1210u0kw0w0jyC+oRxVy4oIDfjr
-
- POUZITE PISMO
- Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
- https://fonts.google.com/specimen/Roboto
-*/
 
 body {
     padding: 0;
@@ -32,15 +21,10 @@ body {
 
 .obal {
     width: 960px;
-    /* obsah stránky je omezený do pruhu širokého 960px */
     margin: 0 auto;
-    /* pruh je na stránce vycentrovaný */
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-
-/* ----- zde začni psát vlastní CSS ----- */
-
 
 .header {
     display: flex;
@@ -75,7 +59,8 @@ body {
 
 .jumbotron {
     position: relative;
-    background: #DFFA00 url('images/background1.jpg') no-repeat;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('images/background1.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
     padding: 60px 425px 60px 40px;
@@ -159,6 +144,7 @@ h2 {
     font-size: 20px;
     font-weight: 700;
     color: #879700;
+    text-align: center;
 }
 
 .product-content {
@@ -225,4 +211,75 @@ a img {
     background-color: #A8B226;
     color: #fff;
     text-align: center;
+}
+
+@media (max-width: 860px) and (min-width: 480px){
+    .jumbotron {
+        padding: 60px 40px;
+    }
+    .additionalContent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .additionalContent-column{
+       max-width: 50%;
+    }
+    .production-flex {
+        flex-wrap: wrap;
+    }
+    .production-flex img {
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .jumbotron {
+        padding: 10px 5px;
+        text-align: center;
+    }
+    .jumbotron-title {
+        font-size: 3em;
+    }
+    .jumbotron-desc {
+        font-size: 1.5em;
+        margin: 25px 0;
+    }
+    .additionalContent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .additionalContent-column {
+        width: 100%;
+    }
+    .product {
+        margin: 5px;
+    }
+    .production-flex {
+        flex-wrap: wrap;
+    }
+    .production-flex img {
+        margin: 0 auto 20px auto;
+    }
+    .production-flex div {
+        margin: 5px;
+        font-size: 1em;
+    }
+    .contact-box {
+        padding: 0;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .header-menu {
+        flex-wrap: wrap;
+    }
+    .header-menu a {
+        width: 100%;
+        text-align: center;
+    }
+    .header-logo {
+        margin: auto;
+    }
 }
