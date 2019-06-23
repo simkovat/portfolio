@@ -1,0 +1,1 @@
+Small project to practice building interactivity with JavaScript.
